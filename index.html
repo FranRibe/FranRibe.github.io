@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Titulo del proyecto-->
+    <title>Proyecto CV</title>
+    <!--Linkeo BootStrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="icon" href="cv-source/cv-icon.png" type="image/x-icon">
+    <!--Linkeo el googlefonts icons-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!--Linkeo el css-->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <header class="menu">
+        <nav class="navbar navbar-expand-lg custom-bg-color fixed-top" data-bs-theme="dark">
+            <div class="container-fluid">
+                <span id="header-title" class="logo-texto h1"><img src="cv-source/cv-icon.png" alt="Icono cv">Curriculum
+                    Vitae</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="#detalles-personales">Detalles personales</a>
+                        <a class="nav-link" href="#destrezas">Destrezas</a>
+                        <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+                        <a class="nav-link" href="#estudios">Estudios</a>
+                        <a class="nav-link" href="#experiencia">Experiencia</a>
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container my-2 slide-in-container">
+        <div class="row">
+            <!--Solapa detalles-->
+            <div id="detalles" class="col-sm-12 col-md-12 col-lg-4 col-xl-4 my-2 borde-md">
+                <!--Para poder darle estilo sin problemas a la solapa detalles-->
+                <div class="estilo-detalle">
+                    <section id="detalles-personales" class="foto-perfil">
+                        <img src="cv-source/glen-craig.jpg" alt="Foto de Glen Craig">
+                        <h2>Glen Craig</h2>
+                    </section>
+                    <h3 id="detalles-h3">Detalles personales</h3>
+                    <span class="icono-texto"><img src="cv-source/persona-icon.svg" alt="Icono de persona">Nombre
+                        completo
+                    </span>
+                    <p>Glen Craig</p>
+                    <span class="icono-texto"><img src="cv-source/nacimiento-icon.svg" alt="Icono recien nacido">Fecha
+                        de nacimiento</span>
+                    <p>7/3/1990</p>
+                    <span class="icono-texto" class="locacion-text"><img src="cv-source/locacion-icon.svg"
+                            alt="Icono de locación">Dirección
+                    </span>
+                    <p><a id="locacion"
+                            href="https://www.google.com.ar/maps/place/6782+Lakeview+Dr,+Bellevue,+MI+49021,+EE.+UU./@42.5265045,-84.9704368,17z/data=!3m1!4b1!4m6!3m5!1s0x88180731cca462bb:0xdc46669565d1aa58!8m2!3d42.5265045!4d-84.9704368!16s%2Fg%2F11ggschf76?entry=ttu"
+                            target="_blank">6782
+                            Lakeview Dr
+                        </a></p>
+                    <span class="icono-texto"><img src="cv-source/telefono-icon.svg" alt="Icono de teléfono">Número de
+                        teléfono
+                    </span>
+                    <p>(514) 572-3032</p>
+                    <span class="icono-texto"><img src="cv-source/email-icon.svg" alt="Icono de email">Correo
+                        electrónico
+                    </span>
+                    <p>glen.craig@example.com</p>
+                    <section id="destrezas">
+                        <h3 id="detalles-h3">Destrezas</h3>
+                        <span class="icono-texto">HTML5 y CSS<span class="material-symbols-outlined">star</span><span
+                                class="material-symbols-outlined">star</span><span
+                                class="material-symbols-outlined">star</span><span
+                                class="material-symbols-outlined">star</span><span class="material-symbols-outlined"
+                                id="no-filled">star</span>
+                        </span>
+                        <span class="icono-texto">Bootstrap y JS<span class="material-symbols-outlined">star</span><span
+                                class="material-symbols-outlined">star</span><span
+                                class="material-symbols-outlined">star</span><span id="no-filled"
+                                class="material-symbols-outlined">star</span><span id="no-filled"
+                                class="material-symbols-outlined">star</span>
+                        </span>
+                        <span class="icono-texto">Programas de edición<span
+                                class="material-symbols-outlined">star</span><span
+                                class="material-symbols-outlined">star</span><span
+                                class="material-symbols-outlined">star</span><span id="no-filled"
+                                class="material-symbols-outlined">star</span><span id="no-filled"
+                                class="material-symbols-outlined">star</span>
+                        </span>
+                        <span class="icono-texto">Comunicación<span class="material-symbols-outlined">star</span><span
+                                class="material-symbols-outlined">star</span><span
+                                class="material-symbols-outlined">star</span><span
+                                class="material-symbols-outlined">star</span><span id="no-filled"
+                                class="material-symbols-outlined">star</span>
+                        </span>
+                        <span class="icono-texto">Trabajo en equipo<span
+                                class="material-symbols-outlined">star</span><span
+                                class="material-symbols-outlined">star</span><span
+                                class="material-symbols-outlined">star</span><span
+                                class="material-symbols-outlined">star</span><span id="no-filled"
+                                class="material-symbols-outlined">star</span>
+                        </span>
+                        <h3 id="detalles-h3">Idiomas</h3>
+                        <span class="icono-texto">Español<span class="material-symbols-outlined">star</span><span
+                                class="material-symbols-outlined">star</span><span
+                                class="material-symbols-outlined">star</span><span
+                                class="material-symbols-outlined">star</span><span
+                                class="material-symbols-outlined">star</span>
+                        </span>
+                        <span class="icono-texto">Inglés<span class="material-symbols-outlined">star</span><span
+                                class="material-symbols-outlined">star</span><span
+                                class="material-symbols-outlined">star</span><span id="no-filled"
+                                class="material-symbols-outlined">star</span><span id="no-filled"
+                                class="material-symbols-outlined">star</span>
+                        </span>
+                        <span class="icono-texto">Portugués<span class="material-symbols-outlined">star</span><span
+                                class="material-symbols-outlined">star</span><span id="no-filled"
+                                class="material-symbols-outlined">star</span><span id="no-filled"
+                                class="material-symbols-outlined">star</span><span id="no-filled"
+                                class="material-symbols-outlined">star</span>
+                        </span>
+                    </section>
+                </div>
+            </div>
+            <!--Solapa menu-->
+            <div id="menu" class="col-sm-12 col-md-12 col-lg-8 col-xl-8 my-2">
+                <!--Para poder darle estilo sin problemas a la solapa menu-->
+                <div class="estilo-menu">
+                    <section id="sobre-mi" class="introduccion">
+                        <h2>Sobre mí:</h2>
+                        <p>Apasionado Desarrollador de Software recién incorporado en el emocionante
+                            mundo de los
+                            emprendimientos tecnológicos. Mi enfoque se centra en la creación de
+                            soluciones innovadoras
+                            y
+                            efectivas (orientado al desarrollo web) que impulsan el crecimiento de
+                            las empresas. Con un
+                            conjunto de habilidades técnicas y una mentalidad orientada a
+                            resultados, listo para
+                            enfrentar desafíos y contribuir con el equipo.</p>
+                    </section>
+                    <section id="estudios" class="estudios-certificados">
+                        <h3>Estudios y certificaciones</h3>
+                        <h6>Estudios:</h6>
+                        <ul>
+                            <li>Licenciatura en informática. Universidad Nacional de La Plata
+                                (UNLP). La Plata, Buenos
+                                Aires.</li>
+                        </ul>
+                        <h6>Certificados:</h6>
+                        <ul>
+                            <li>Desarrollo Front End (Online - Argentina Programa).</li>
+                            <li>Desarrollo web (Online - Google).</li>
+                            <li>Entre otros cursos online.</li>
+                        </ul>
+                        <p>Siempre buscando mantenerse actualizado con las tecnologías del mercado.
+                            Buscando información
+                            en webs oficiales y aprendiendo mediante comunidades de desarrolladores
+                            o de forma
+                            autodidacta.</p>
+                    </section>
+                    <section id="experiencia" class="experiencia">
+                        <h3>Experiencia laboral</h3>
+                        <h6>Desarrollador Asociado</h6>
+                        <h6>TechWeb Solutions, Inc.</h6>
+                        <h6>Fecha de Inicio: Febrero 2023 - Fecha de Finalización: Presente</h6>
+                        <p>Descripción:</p>
+                        <p>Como Desarrollador Front-end en TechWeb Solutions, he tenido la
+                            oportunidad de contribuir al
+                            éxito de proyectos web emocionantes y desafiantes. Mi enfoque se ha
+                            centrado en la creación
+                            de experiencias de usuario excepcionales y altamente interactivas
+                            mediante el uso de
+                            tecnologías Front-end de vanguardia.</p>
+                        <p>Logros y Responsabilidades destacadas:</p>
+                        <ol>
+                            <li>Desarrollo de la Intefaz de Usuario: He liderado la creación y el
+                                diseño de interfaces
+                                de usuario atractivas y funcionales para múltiples proyectos web.
+                                Esto incluye la
+                                implementación de diseños proporcionados por el equipo de diseño de
+                                UX/UI.</li>
+                            <li>Optimización de Rendimiento: Me he centrado en la optimización del
+                                rendimiento de las
+                                aplicaciones web, lo que ha resultado en tiempos de carga más
+                                rápidos y una experiencia
+                                de usuario más fluida. Esto incluye la minimización de solicitudes
+                                HTTP y la compresión
+                                de recursos.</li>
+                            <li>Diseño Receptivo: Garanticé que todas las aplicaciones y sitios web
+                                fueran completamente
+                                receptivos, asegurándome de que se vean y funcionen perfectamente en
+                                dispositivos
+                                móviles, tabletas y computadoras de escritorio.</li>
+                            <li>Colaboración en Equipo: Colaboré de manera efectiva con diseñadores,
+                                desarrolladores
+                                Back-end y equipos de control de calidad para garantizar que los
+                                proyectos se entregaran
+                                a tiempo y cumplieran con los estándares de calidad.</li>
+                            <li>Mantenimiento y Actualizaciones: Realicé actualizaciones regulares
+                                de código y
+                                correcciones de errores, y estuve involucrado en la implementación
+                                de nuevas
+                                características y mejoras según las necesidades del cliente.</li>
+                        </ol>
+                        <p>Mi experiencia como Desarrollador Front-end en TechWeb Solutions ha sido
+                            gratificante y
+                            me ha permitido crecer profesionalmente en un entorno dinámico. Estoy
+                            comprometido con
+                            la creación de experiencias de usuario excepcionales y el impulso del
+                            éxito de nuestros
+                            clientes a través de soluciones web innovadoras.</p>
+                    </section>
+                    <div class="experiencia-free-lance">
+                        <h6>Desarrolador Web Freelance</h6>
+                        <p>He tenido el privilegio de trabajar de manera independiente con clientes de diversas partes
+                            del mundo, lo que me ha permitido adquirir una amplia experiencia en proyectos de variada
+                            envergadura. Mi compromiso ha sido siempre brindar soluciones personalizadas y efectivas que
+                            satisfagan plenamente las necesidades de mis clientes.</p>
+                        <p>Mi enfoque principal en cada proyecto ha sido comprender a fondo las metas y expectativas del
+                            cliente. Para lograrlo, me he dedicado a escuchar atentamente sus requerimientos y a evaluar
+                            la viabilidad de cada proyecto. Esto incluye considerar aspectos técnicos, presupuestos y
+                            plazos, con el objetivo de garantizar que los resultados finales sean óptimos y cumplan con
+                            las expectativas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <section id="contacto" class="container-pie">
+            <h2>Contacto</h2>
+            <p>¡Contáctame a alguna de mis redes!</p>
+            <a class="redes" href="https://www.facebook.com/fraan.ribe/" target="_blank" rel="noopener noreferrer">
+                <img src="cv-source/facebook-icon.png" alt="Contacto Correo">
+            </a>
+            <a class="redes" href="https://github.com/FranRibe" target="_blank" rel="noopener noreferrer">
+                <img src="cv-source/github-icon.png" alt="Contacto GitHub">
+            </a>
+            <a class="redes" href="https://www.instagram.com/fran.ribe" target="_blank" rel="noopener noreferrer">
+                <img src="cv-source/instagram-icon.png" alt="Contacto Instagram"></a>
+        </section>
+    </footer>
+    <script defer src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
